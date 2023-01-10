@@ -1,0 +1,15 @@
+def tri_selection_dec(l4):
+    i=0
+    while i<len(l4) :
+        max=l4[i]
+        j=i+1
+        while j<len(l4) :
+            if l4[max] < l4[j] :
+                max=l4[j]
+                j=j+1
+        temp = l4[i]
+        l4[i] = l4[max]
+        l4[max] = temp
+        i=i+1
+    return l4
+print(tri_selection_dec(l4))
