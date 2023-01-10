@@ -1,3 +1,6 @@
+npm install -g snyk
+snyk auth
+snyk monitor
 def tri_selection_dec(l4):
     i=0
     while i<len(l4) :
